@@ -51,14 +51,18 @@ body {
 
 main {
     background-color: #151922;
-    flex-grow: 1;
     overflow: auto;
+    width: calc(100vw - 230px);
     height: calc(100vh - 90px);
+}
+
+#main-content {
+    padding: 84px 20px 20px;
 }
 
 /* top bar */
 #top-bar {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.40);
     padding: 20px 20px;
     justify-content: flex-end;
     position: fixed;
@@ -75,8 +79,37 @@ main {
     border: 1px solid white;
     border-radius: 27px;
 }
-
 /* fine top bar */
+
+/* sezione recently played */
+
+.recently-played {
+    gap: 15px;
+}
+.card {
+    max-width: 180px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 12px;
+    
+}
+
+.card-title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    color: #787B82;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+/* fine sezione recently played */
 
 /**************************
     FINE MAIN
