@@ -1,42 +1,99 @@
-/* reset */
+/**************************
+    RESET
+**************************/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-/* fine reset */
+
+/**************************
+    FINE RESET
+**************************/
 
 
-/* common */
+/**************************
+    COMMON 
+**************************/
+
+body {
+    font-family: sans-serif;
+}
+
 .flex {
     display: flex;
 }
-/* fine common */
+
+/**************************
+    FINE COMMON
+**************************/
 
 
-/* sidebar */
+/**************************
+    SIDEBAR
+**************************/
+
 #sidebar {
     background-color: black;
     width: 230px;
     height: calc(100vh - 90px);
 }
-/* fine sidebar */
+
+/**************************
+    FINE SIDEBAR
+**************************/
 
 
-/* main */
+/**************************
+    MAIN
+**************************/
+
 main {
     background-color: #151922;
     flex-grow: 1;
     overflow: auto;
     height: calc(100vh - 90px);
 }
-/* fine main */
 
-/* now-playing */
+/* top bar */
+#top-bar {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 20px 20px;
+    justify-content: flex-end;
+    position: fixed;
+    width: calc(100% - 230px);
+}
+
+#top-bar .button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 16px 40px;
+    border: 1px solid white;
+    border-radius: 27px;
+}
+
+/* fine top bar */
+
+/**************************
+    FINE MAIN
+**************************/
+
+
+/**************************
+    NOW PLAYING BAR
+**************************/
+
 #now-playing {
     background-color: #282828;
     position: fixed;
     width: 100%;
     height: 90px;
 }
-/* fine now-playing */
+
+/**************************
+    FINE NOW PLAYING BAR
+**************************/
