@@ -25,6 +25,15 @@ body {
     display: flex;
 }
 
+section {
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
 /**************************
     FINE COMMON
 **************************/
@@ -57,7 +66,7 @@ main {
 }
 
 #main-content {
-    padding: 84px 20px 20px;
+    padding: 104px 20px 20px;
 }
 
 /* top bar */
@@ -82,12 +91,12 @@ main {
 /* fine top bar */
 
 /* sezione recently played */
-
-.recently-played {
+.cards {
     gap: 15px;
 }
 .card {
     max-width: 180px;
+    width: calc((100vw - 230px - 40px) / 6 - 15px / 6 * 5);
 }
 
 .card img {
@@ -110,6 +119,13 @@ main {
     text-align: center;
 }
 /* fine sezione recently played */
+
+/* sezione Artisti popolari */
+.popular-artist img {
+    border-radius: 50%;
+}
+/* fine sezione Artisti popolari */
+
 
 /**************************
     FINE MAIN
