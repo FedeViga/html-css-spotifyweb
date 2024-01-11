@@ -146,3 +146,59 @@ main {
 /**************************
     FINE NOW PLAYING BAR
 **************************/
+
+
+/**************************
+    MEDIA QUERY
+**************************/
+
+/* media query medium */
+@media screen and (max-width: 992px) {
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc((100vw - 230px - 40px) / 4 - 15px / 4 * 3);
+    }
+
+}
+/* fine media query medium */
+
+
+/* media query small */
+@media screen and (max-width: 768px) {
+
+    .card {
+        max-width: 100%;
+        width: calc((100vw - 230px - 40px) / 2 - 15px / 2);
+    }
+}
+/* fine media query small */
+
+
+/* media query x-small */
+@media screen and (max-width: 576px) {
+
+    main {
+        width: calc(100vw - 50px);
+    }
+    
+    #top-bar {
+        width: calc(100vw - 50px);
+    }
+    #sidebar {
+        width: 50px;
+    }
+
+    .card {
+        max-width: 100%;
+        width: calc((100vw - 50px - 40px) / 2 - 15px / 2);
+    }
+}
+/* fine media query x-small */
+
+/**************************
+    FINE MEDIA QUERY
+**************************/
