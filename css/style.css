@@ -236,7 +236,9 @@ nav {
 }
 .card {
     max-width: 180px;
-    width: calc((100vw - 230px - 40px) / 6 - 15px / 6 * 5);
+
+    width: calc((100vw - 230px - 40px - 8px) / 6 - 15px / 6 * 5);
+    /* larghezza viewport - sidebar - padding main - scrollbar */
 }
 
 .card img {
@@ -303,7 +305,8 @@ nav {
     }
 
     .card {
-        width: calc((100vw - 230px - 40px) / 4 - 15px / 4 * 3);
+        width: calc((100vw - 230px - 40px - 8px) / 4 - 15px / 4 * 3);
+        /* larghezza viewport - sidebar - padding main - scrollbar */
     }
 
 }
@@ -315,7 +318,8 @@ nav {
 
     .card {
         max-width: 100%;
-        width: calc((100vw - 230px - 40px) / 2 - 15px / 2);
+        width: calc((100vw - 230px - 40px - 8px) / 2 - 15px / 2);
+        /* larghezza viewport - sidebar - padding main - scrollbar */
     }
 }
 /* fine media query small */
@@ -335,7 +339,8 @@ nav {
 
     .card {
         max-width: 100%;
-        width: calc((100vw - 50px - 40px) / 2 - 15px / 2);
+        width: calc((100vw - 50px - 40px - 8px) / 2 - 15px / 2);
+        /* larghezza viewport - sidebar - padding main - scrollbar */
     }
     /* fine main */
 
@@ -403,7 +408,7 @@ nav {
 **************************/
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -412,12 +417,12 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #282828; 
+    background-color: #585858; 
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #414141; 
+    background-color: #949494; 
 }
 
 /**************************
