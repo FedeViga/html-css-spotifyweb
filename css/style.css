@@ -16,9 +16,18 @@
 /**************************
     COMMON 
 **************************/
+@font-face {
+    font-family: 'Circular Spotify';
+    src: url(../fonts/CircularSpotifyText-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Circular Spotify Bold';
+    src: url(../fonts/CircularSpotifyText-Bold.otf);
+}
 
 body {
-    font-family: sans-serif;
+    font-family: 'Circular Spotify', sans-serif;
 }
 
 .flex {
@@ -51,7 +60,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #D2D2D2;
 }
 /**************************
     FINE COMMON
@@ -67,6 +76,7 @@ a:hover {
     width: 230px;
     height: calc(100vh - 90px);
     padding: 20px 20px 0px;
+    overflow: auto;
 }
 
 .mobile-hidden {
@@ -127,7 +137,7 @@ a:hover {
 }
 
 .playlist a:hover .create-playlist {
-    color: white;
+    color: #D2D2D2;
 
 }
 .create-playlist {
@@ -188,6 +198,7 @@ main {
     overflow: auto;
     width: calc(100vw - 230px);
     height: calc(100vh - 90px);
+    overflow-x: hidden;
 }
 
 #main-content {
@@ -238,6 +249,7 @@ nav {
 
 .active {
     position: relative;
+    color: #D2D2D2;
 }
 
 .underline {
@@ -293,7 +305,7 @@ nav {
 
 .overlay .fa-circle-play {
     font-size: 60px;
-    color: white;
+    color: #D2D2D2;
     opacity: 0;
     transition: .3s ease;
 }
@@ -481,8 +493,13 @@ nav {
     padding: 0;
 }
 
+.now-playing-right .bar .right,
+.now-playing-right .bar .left {
+    width: 50%;
+}
+
 .now-playing-right .bar .cirlce {
-    position: 50%;
+    left: calc(50% - 5px);
 }
 
 .bar:hover {
