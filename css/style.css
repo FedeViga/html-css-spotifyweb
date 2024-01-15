@@ -12,6 +12,27 @@
     FINE RESET
 **************************/
 
+/**************************
+    ANIMAZIONI
+**************************/
+@keyframes song-playing {
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes song-playing-circle {
+
+    100% {
+        left: calc(100% - 5px);
+    }
+}
+
+/**************************
+    FINE ANIMAZIONI
+**************************/
+
 
 /**************************
     COMMON 
@@ -483,17 +504,55 @@ nav {
     align-items: center;
 }
 
+.playing-bar {
+    width: 100%;
+    max-width: 430px;
+    height: 4px;
+    background-color: #5B5B5B;
+    border-radius: 2px 2px 2px 2px;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.inner-playing-bar {
+    height: 4px;
+    border-radius: 2px 2px 2px 2px;
+    width: 0%;
+    background-color: #C1C1C1;
+    animation: song-playing 275s linear;
+}
+
+.playing-bar .circle {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(0% - 5px);
+    top: -3px;
+    visibility: hidden;
+    animation: song-playing-circle 275s linear;
+}
+
+.playing-bar:hover .circle {
+    visibility: visible;
+}
+
+.playing-bar:hover {
+    cursor: pointer;
+}
+
+.playing-bar:hover .inner-playing-bar {
+    background-color: lime;
+    
+}
+
 .bar {
-    width: 100px;
+    width: 100%;
     max-width: 430px;
     background-color: #5B5B5B;
     border-radius: 2px 2px 2px 2px;
     position: relative;
-}
-
-.now-playing-middle .bar {
-    width: 100%;
-    margin: 0px 20px;
 }
 
 .bar .left {
