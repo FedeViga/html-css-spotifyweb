@@ -31,29 +31,29 @@
                     <img src="./img/logo.svg">
                 </div>
     
-                <ul class="sidebar-nav">
+                <ul class="sidebar-nav flex">
     
                     <li>
-                        <a class="active" href="#">
+                        <a class="active flex" href="#">
 
-                            <i class="fa-solid fa-house"></i>Home
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
+                            <div>Home</div>
                             <div class="yellow-line"></div>
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="flex" href="#">
 
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            Cerca
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
+                            <div>Cerca</div>
 
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="flex" href="#">
 
-                            <i class="fa-sharp fa-solid fa-lines-leaning"></i>
-                            La tua libreria
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>                            <div>La tua libreria</div>
 
                         </a>
                     </li>
@@ -69,7 +69,7 @@
                     <a href="#">
 
                         <div class="create-playlist">
-                            <i class="fa-solid fa-square-plus"></i>Crea Playlist
+                            <i class="fa-sharp fa-solid fa-square-plus"></i>Crea Playlist
                         </div>
 
                     </a>
@@ -133,14 +133,15 @@
     
                     <div class="gray-line"></div>
     
-                    <div class="account">
-                        <i class="fa-solid fa-circle-user"></i>
+                    <div class="account flex">
+                        <img src="./img/profile.svg">
                         John Doe
                     </div>
                 </div>
 
             </div>
 
+            <!-- parte sidabr visibile in layout mobile -->
             <div class="mobile-shown">
 
                 <div class="logo">
@@ -149,18 +150,26 @@
 
                 <div class="sidebar-nav">
 
-                    <i class="fa-sharp fa-solid fa-house mobile"></i>
-    
-                    <i class="fa-solid fa-magnifying-glass mobile"></i>
-    
-                    <i class="fa-sharp fa-solid fa-lines-leaning mobile"></i>
+                    <a href="#">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
+                    </a>
+                    
+                    <a href="#">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="#ffffff" fill-rule="evenodd"/></svg>
+                    </a>
+
+                    <a href="#">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#ffffff"/></svg>
+                    </a>
 
                 </div>
 
                 <div class="profile flex">
 
-                    <i class="fa-regular fa-circle-down"></i>
-                    <i class="fa-solid fa-circle-user mobile"></i>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-down"></i>
+                    </a>
+                    <img src="./img/profile.svg">
                     
                 </div>
 
@@ -518,20 +527,24 @@
                 </a>
             </div>
 
-            <a href="#">
+            <div class="links flex">
 
-                <div class="like">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-
-            </a>
-            <a href="#">
-
-                <div class="folder">
-                    <i class="fa-regular fa-folder"></i>
-                </div>
-
-            </a>
+                <a href="#">
+    
+                    <div class="like">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+    
+                </a>
+                <a href="#">
+    
+                    <div class="folder">
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+    
+                </a>
+                
+            </div>
 
 
         </div>
