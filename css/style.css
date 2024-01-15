@@ -352,9 +352,8 @@ nav {
 
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    visibility: hidden;
     
-    transition: .3s ease-in-out;
+    transition: opacity .3s ease;
     
 }
 
@@ -362,12 +361,12 @@ nav {
     font-size: 60px;
     color: #D2D2D2;
     opacity: 0;
-    transition: .3s ease-in-out;
+    transition: .3s ease;
 }
 
 .card:hover .overlay {
-    visibility: visible;
     opacity: 1;
+    transition: opacity .3s ease;
 }
 
 .card:hover .fa-circle-play {
